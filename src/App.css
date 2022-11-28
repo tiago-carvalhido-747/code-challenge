@@ -1,0 +1,61 @@
+body {
+  background: #141414;
+  color: #ffffff;
+}
+
+.movie-app > .row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+.image-container {
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.image-container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.row > * {
+  width: auto !important;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 93%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ant-btn {
+  margin: 5px;
+}
+
+.ant-modal-footer {
+  display: none;
+}
+
+.movie-pic {
+  padding-top: 5px;
+  display: inline-block;
+  width: 40%;
+}
+
+.movie-descr {
+  display: inline-block;
+  width: 60%;
+}
